@@ -1,0 +1,2 @@
+./gradlew clean build -x test
+rebuild le project en nettoyant le cache
