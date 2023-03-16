@@ -1,0 +1,17 @@
+GIT
+
+1) cherry-pick
+appliquer les modifications d'un commit d'une branche dans une autre:
+Assurez-vous d'être dans la branche de destination dans laquelle vous souhaitez appliquer le commit sélectionné. Vous pouvez utiliser la commande git branch pour voir la liste des branches disponibles et git checkout <nom de la branche> pour basculer vers la branche de votre choix.
+
+Utilisez la commande git log pour afficher l'historique des commits de la branche source et localiser le commit que vous souhaitez récupérer. Notez l'identifiant de ce commit (son hash) qui se présente sous la forme d'une chaîne de caractères alphanumérique unique.
+
+Utilisez la commande git cherry-pick suivi de l'identifiant du commit que vous souhaitez récupérer pour appliquer le commit à votre branche de destination. Par exemple :
+
+git cherry-pick abc123
+
+Cela va récupérer le commit identifié par abc123 et l'appliquer sur votre branche de destination. Si le cherry-pick réussit, vous devriez voir un message indiquant que le commit a été appliqué avec succès.
+
+Vérifiez que le cherry-pick a été effectué correctement en vérifiant les modifications apportées par le commit. Utilisez la commande git log ou gitk pour vérifier que le commit a été ajouté à votre historique de commits.
+
+Cependant, gardez à l'esprit que si des conflits de fusion surviennent, vous devrez les résoudre manuellement avant de pouvoir effectuer le cherry-pick. Vous pouvez également utiliser l'option --abort pour annuler le cherry-pick en cas de problème.
