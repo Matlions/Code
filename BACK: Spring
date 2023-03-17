@@ -1,0 +1,10 @@
+ERROR:
+
+1) Error sql integrity exception/violation:
++ le nom de la propriété [new_deliveryline_id] + dans le cadre d'un test, il manquait dans le dto l'id . ce qui fait que cela 
+créer une nouvelle ligne (nouveau objet avec une nouvelle id). Dans le cadre d'un update, on est sensé avoir déjà des lignes 
+shipmentLineDTO avec un id, 
+donc ca ne doit pas généréer une nouvelle ligne donc un nouvel id.
+
+2) dans le mapper , une méthode avec @@AfterMapping(NewDeliveryform entity, @MappingTarget ShipmentFormDTO dto)
+la méthode va donc cibler le dto pour appliquer un traitement spécifique
