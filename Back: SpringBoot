@@ -1,0 +1,3 @@
+SpringBoot a pour but de faciliter la mise en place d'un projet avec le frameWork Spring:
+les starters : sont en fait des méga dépendances qui regroupent les dépendances dont on a besoin pour lancer un projet.
+Exemple besoin de faire une appli web , donc d'avoir des dépendances liées au web, il suffit d'utiliser le starter "Spring  starter web".
